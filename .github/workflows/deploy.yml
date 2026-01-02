@@ -49,5 +49,5 @@ jobs:
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Deploy to Vercel (Source)
+      - name: Deploy to Vercel (Source + Assets)
         run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
