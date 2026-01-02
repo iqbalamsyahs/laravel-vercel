@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "composer install --no-dev --optimize-autoloader && vite build",
+        "build": "mkdir -p bin && curl -sS https://getcomposer.org/installer | php -- --install-dir=bin --filename=composer && php bin/composer install --no-dev --optimize-autoloader && vite build",
         "dev": "vite"
     },
     "dependencies": {
