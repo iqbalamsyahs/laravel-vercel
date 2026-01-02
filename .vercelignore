@@ -1,0 +1,7 @@
+node_modules
+tests
+.git
+storage/*.key
+.env
+.env.*.local
+.vercel

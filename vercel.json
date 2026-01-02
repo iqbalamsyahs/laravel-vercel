@@ -21,11 +21,5 @@
         "APP_DEBUG": "false",
         "APP_URL": "https://${VERCEL_URL}",
         "ASSET_URL": "https://${VERCEL_URL}"
-    },
-    "exclude": [
-        "node_modules/**",
-        "tests/**",
-        ".git/**",
-        "storage/*.key"
-    ]
+    }
 }
