@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [
+        {
+            "src": "/(build|assets|css|js|images|fonts|storage|favicon.ico|robots.txt|manifest.json)/.*",
+            "headers": { "cache-control": "s-maxage=31536000, immutable" },
+            "dest": "/public/$0"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://YOUR_VERCEL_URL.vercel.app"
+    }
+}
